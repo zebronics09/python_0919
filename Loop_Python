@@ -1,0 +1,15 @@
+# W. A P. which takes one number from 0 to 9 from the user and prints
+# it in the word. And if the word is not from 0 to 9 then
+# it should print that number is outside of the range and program should
+# exit.
+
+
+num = int(input ('Enter a Number : '))
+a = ['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine']
+for i in list(range(10)):
+ if i==num:
+ print(a[i])
+ break
+ if num>=10 or num<0:
+ print('Out of range')
+ break
