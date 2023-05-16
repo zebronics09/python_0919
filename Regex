@@ -1,0 +1,41 @@
+#Write the regular expression and use proper method which Retrieves all words start
+#Output:- ['8th', '11th']
+
+import re
+string = 'The election in delhi will be held on 8th and result for the same will be on 11th.'
+print(re.findall(r'\b\d+th', string))
+
+
+#Write the regular expression and use proper method which Retrieves all words havin 5 chars.
+#Output:- ['peter', 'giper']
+
+string = "peter giper picked a peck of pickled peppers"
+import re
+print(re.findall(r"\b\w{5}\b", string))
+
+
+#Write the regular expression and use proper method which Retrieves all words havin more than 4 chars.
+#Output:- ['Retrieving', 'words', 'having', 'least', 'characters']
+
+import re
+string = "Retrieving all words having at least 4 characters"
+print(re.findall(r"\b\w{4,}\b", string))
+
+
+#Write the regular expression and use proper method which Retrieves all words havin at least 4 characters.
+#Output:- ['all', 'words', 'least']
+
+import re
+string = "Retrieving all words having at least 4 characters"
+print(re.findall(r"\b\w{3,5}\b", string))
+
+
+
+##Write the regular expression and use proper method which Retrieves name starting with an or ak.
+#Output:- ['anil', 'akhil', 'anant', 'ankur']
+
+import re
+string = 'anil akhil anant abhi arun arati arundhati abhijit ankur'
+print(re.findall(r"\ba[nk][a-z]+\b", string))
+
+
